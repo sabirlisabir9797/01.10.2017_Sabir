@@ -112,70 +112,18 @@ ul {
         top: 0; }
 
 .header-bottom {
-  display: block;
-  background-color: #25d25e;
-  height: 60px; }
-  .header-bottom .menu-wrap {
-    display: inline-block;
-    height: 60px;
-    width: 100%;
-    z-index: 99; }
-  .header-bottom .pos-relative {
-    position: relative; }
-    .header-bottom .pos-relative .main-menu {
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      list-style: none;
-      display: inline-block;
-      position: static;
-      font-family: Open Sans, Arial;
-      font-size: 14px; }
-      .header-bottom .pos-relative .main-menu li.active {
-        background: #31ee70; }
-      .header-bottom .pos-relative .main-menu li {
-        float: left;
-        display: inline; }
-        .header-bottom .pos-relative .main-menu li a {
-          float: left;
-          padding: 17px 25px 17px 25px;
-          color: #fff;
-          font-size: 12px;
-          font-weight: 600;
-          text-transform: uppercase;
-          border-right: 1px solid #31ee70;
-          text-decoration: none;
-          transition: color 0.4s ease-in-out; }
-          .header-bottom .pos-relative .main-menu li a:hover {
-            background-color: #31ee70; }
-    .header-bottom .pos-relative .header-search-form {
-      position: absolute;
-      right: 0;
-      top: 10px; }
-      .header-bottom .pos-relative .header-search-form form input[type=text] {
-        display: block;
-        border: 1px solid rgba(255, 255, 255, 0.6);
-        background-color: transparent;
-        padding: 0 15px;
-        width: 230px;
-        height: 40px;
-        line-height: 38px;
-        padding-right: 50px;
-        font-size: 13px;
-        color: #fff;
-        border-radius: 2px; }
-        .header-bottom .pos-relative .header-search-form form input[type=text]:hover {
-          border: 1px solid rgba(255, 255, 255, 0.9); }
-      .header-bottom .pos-relative .header-search-form form button {
-        background-color: transparent;
-        border: none;
-        border-left: 1px solid rgba(255, 255, 255, 0.6);
-        position: absolute;
-        right: 0;
-        top: 0;
-        height: 100%;
-        width: 40px;
-        color: #fff; }
+  background-color: #25d25e; }
+  .header-bottom ul li a {
+    text-align: center;
+    float: left;
+    padding: 17px 15px 17px 15px !important;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none; }
+  .header-bottom .item1 {
+    margin-top: 16px; }
 
 .promo-section .ptb-100 {
   padding-top: 100px;
@@ -210,57 +158,12 @@ ul {
 
 .testimonial-section {
   padding-top: 100px;
-  padding: 100px; }
-  .testimonial-section.bg-grey {
-    background-color: #f7f7f7; }
-  .testimonial-section.bd-top-grey {
-    border-top: 1px solid #eaeaea; }
-  .testimonial-section .col-12 .owl-nav .owl-prev {
-    width: 60px;
-    height: 60px;
-    border: 1px solid #ddd;
-    color: #25d25e;
-    font-size: 18px;
-    display: block;
+  padding-bottom: 100px; }
+  .testimonial-section #carouselExampleControls {
+    background: #25d25e;
     text-align: center;
-    line-height: 58px;
-    position: absolute;
-    left: -18%;
-    top: calc(50% - 30px);
-    transition: all 0.2s linear; }
-    .testimonial-section .col-12 .owl-nav .owl-prev i {
-      font-size: 35px;
-      line-height: 60px;
-      text-align: center; }
-  .testimonial-section .col-12 .owl-nav .owl-next {
-    width: 60px;
-    height: 60px;
-    border: 1px solid #ddd;
-    color: #25d25e;
-    font-size: 18px;
-    display: block;
-    text-align: center;
-    line-height: 58px;
-    position: absolute;
-    right: -18%;
-    top: calc(50% - 30px);
-    transition: all 0.2s linear; }
-    .testimonial-section .col-12 .owl-nav .owl-next i {
-      font-size: 35px;
-      line-height: 60px;
-      text-align: center; }
-  .testimonial-section .col-12 .testimonial {
-    padding: 100px; }
-    .testimonial-section .col-12 .testimonial p {
-      font-size: 20px;
-      line-height: 28px;
-      font-weight: 300;
-      color: #fff;
-      margin-bottom: 30px; }
-    .testimonial-section .col-12 .testimonial h4 {
-      color: #fff;
-      font-size: 16px;
-      font-weight: 700; }
+    padding: 40px;
+    color: #fff; }
 
 .testimonial-section2 {
   padding-top: 100px;
@@ -279,7 +182,6 @@ ul {
     margin: 0 0 15px; }
 
 .pricing-section {
-  padding-top: 100px;
   padding-bottom: 100px; }
   .pricing-section .heading {
     margin-top: 50px; }
@@ -384,7 +286,7 @@ ul {
           transition: all 0.2s linear; }
 
 .blog-section {
-  padding-top: 100px;
+  padding-top: 50px;
   padding-bottom: 100px; }
   .blog-section .heading {
     margin-top: 50px; }
@@ -460,10 +362,11 @@ ul {
   width: 100%; }
 
 .contact {
-  padding-top: 60px;
+  padding-top: 0px;
   margin-bottom: -50px; }
   .contact .offset-md-1 {
-    margin-left: 8.33%; }
+    margin-left: 8.33%;
+    background: #25d25e; }
   .contact .contact-info {
     background-color: #25d25e;
     padding: 30px;
@@ -788,7 +691,7 @@ ul {
       .service-info-section .info-content ul li::before {
         color: #25d25e;
         font-family: "FontAwesome";
-        content: "";
+        content: "\f00c";
         position: absolute;
         left: -40px;
         top: 0; }
@@ -1081,5 +984,92 @@ ul {
 /*<!--=================================================>>>>>>>>  <ANARIN ABOUT CSS-I> -->*/
 /*<!--==========================================================================>>>>>>>>  <ANARIN sERVICES CSS-I> -->*/
 /*<!--==========================>>>>>>>>  <ANARIN SERVICES CSS-I> -->*/
+@media only screen and (max-width: 576px) {
+  .header-top-left {
+    display: none; }
+
+  .mid-header .contact-info li a {
+    padding: 0 10px;
+    padding-left: 45px;
+    font-size: 10px;
+    margin-top: 10px; }
+
+  .header-bottom .input-group {
+    margin-bottom: 10px; }
+  .header-bottom .navbar-toggler {
+    margin-top: 10px; }
+  .header-bottom .navbar-collapse .navbar-nav {
+    width: 500px;
+    margin-top: 10px;
+    background-color: #fff; }
+    .header-bottom .navbar-collapse .navbar-nav li {
+      border: 1px solid grey; }
+      .header-bottom .navbar-collapse .navbar-nav li a {
+        color: #282525;
+        font-size: 12px; }
+
+  .promo-section .promo-item h4 {
+    font-size: 13px !important;
+    font-weight: 600 !important; }
+  .promo-section .promo-item p {
+    font-size: 10px !important; }
+
+  .service-section .service-item h4 {
+    font-size: 14px !important; }
+  .service-section .btn-group-center a {
+    padding: 20px !important; }
+
+  .service-info-section ul li {
+    margin-left: 20px !important; }
+    .service-info-section ul li::before {
+      left: -20px !important; }
+
+  .case-studies-section {
+    padding-bottom: 70px; }
+    .case-studies-section .owl-nav {
+      display: none !important; }
+
+  .testimonial-section {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important; }
+
+  .pricing-section .pricing-table {
+    margin-top: 10px; }
+  .pricing-section span {
+    font-size: 11px !important; }
+
+  .blog-section .blog-content h4 {
+    font-size: 13px !important; }
+  .blog-section .blog-content p {
+    font-size: 12px !important; }
+
+  .contact {
+    margin-bottom: 50px !important; }
+    .contact .offset-md-1 {
+      margin-left: 0px !important; }
+      .contact .offset-md-1 .contact-info {
+        padding: 25px 25px !important;
+        text-transform: uppercase !important;
+        border-right: 1px solid #28e265 !important; }
+        .contact .offset-md-1 .contact-info i {
+          font-size: 15px; }
+        .contact .offset-md-1 .contact-info a {
+          font-size: 11px !important; }
+
+  .footer_slider .owl-item.active {
+    width: 150px !important; }
+  .footer_slider .owl-item.cloned.active {
+    width: 150px !important; }
+
+  .team-section .team-member {
+    margin-top: 20px !important; }
+
+  .cta-section h2 {
+    font-size: 26px !important;
+    margin-bottom: 25px !important; }
+
+  .contact-section .work_time li {
+    margin-top: 20px !important;
+    margin-bottom: 40px !important; } }
 
 /*# sourceMappingURL=style.css.map */

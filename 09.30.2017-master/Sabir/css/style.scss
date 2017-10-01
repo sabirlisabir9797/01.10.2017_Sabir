@@ -136,80 +136,23 @@
    } // ==================================>>>>>>>>mid-header
    // =====================================================>>>>>>>>header-bottom
    .header-bottom {
-       display: block;
        background-color: #25d25e;
-       height: 60px;
-       .menu-wrap {
-           display: inline-block;
-           height: 60px;
-           width: 100%;
-           z-index: 99;
-       }
-       .pos-relative {
-           position: relative;
-           .main-menu {
-               margin: 0;
-               padding: 0;
-               width: 100%;
-               list-style: none;
-               display: inline-block;
-               position: static;
-               font-family: Open Sans, Arial;
-               font-size: 14px;
-               li.active {
-                   background: #31ee70;
-               }
-               li {
+       ul {
+           li {
+               a {
+                   text-align: center;
                    float: left;
-                   display: inline;
-                   a {
-                       float: left;
-                       padding: 17px 25px 17px 25px;
-                       color: #fff;
-                       font-size: 12px;
-                       font-weight: 600;
-                       text-transform: uppercase;
-                       border-right: 1px solid #31ee70;
-                       text-decoration: none;
-                       transition: color 0.4s ease-in-out;
-                       &:hover {
-                           background-color: #31ee70;
-                       }
-                   }
+                   padding: 17px 15px 17px 15px !important;
+                   color: #fff;
+                   font-size: 12px;
+                   font-weight: 600;
+                   text-transform: uppercase;
+                   text-decoration: none;
                }
            }
-           .header-search-form {
-               position: absolute;
-               right: 0;
-               top: 10px;
-               form input[type=text] {
-                   display: block;
-                   border: 1px solid rgba(255, 255, 255, 0.6);
-                   background-color: transparent;
-                   padding: 0 15px;
-                   width: 230px;
-                   height: 40px;
-                   line-height: 38px;
-                   padding-right: 50px;
-                   font-size: 13px;
-                   color: #fff;
-                   border-radius: 2px;
-                   &:hover {
-                       border: 1px solid rgba(255, 255, 255, 0.9);
-                   }
-               }
-               form button {
-                   background-color: transparent;
-                   border: none;
-                   border-left: 1px solid rgba(255, 255, 255, 0.6);
-                   position: absolute;
-                   right: 0;
-                   top: 0;
-                   height: 100%;
-                   width: 40px;
-                   color: #fff;
-               }
-           }
+       }
+       .item1 {
+           margin-top: 16px;
        }
    } // ===========================>>>>>>>>header-bottom
    // =====================================================>>>>>>>>promo-section
@@ -255,69 +198,12 @@
    //  ====================================================================>>>>>>>>testimonial-section 
    .testimonial-section {
        padding-top: 100px;
-       padding: 100px;
-       &.bg-grey {
-           background-color: #f7f7f7;
-       }
-       &.bd-top-grey {
-           border-top: 1px solid #eaeaea;
-       }
-       .col-12 {
-           .owl-nav {
-               .owl-prev {
-                   width: 60px;
-                   height: 60px;
-                   border: 1px solid #ddd;
-                   color: #25d25e;
-                   font-size: 18px;
-                   display: block;
-                   text-align: center;
-                   line-height: 58px;
-                   position: absolute;
-                   left: -18%;
-                   top: calc(50% - 30px);
-                   transition: all 0.2s linear;
-                   i {
-                       font-size: 35px;
-                       line-height: 60px;
-                       text-align: center;
-                   }
-               }
-               .owl-next {
-                   width: 60px;
-                   height: 60px;
-                   border: 1px solid #ddd;
-                   color: #25d25e;
-                   font-size: 18px;
-                   display: block;
-                   text-align: center;
-                   line-height: 58px;
-                   position: absolute;
-                   right: -18%;
-                   top: calc(50% - 30px);
-                   transition: all 0.2s linear;
-                   i {
-                       font-size: 35px;
-                       line-height: 60px;
-                       text-align: center;
-                   }
-               }
-           }
-           .testimonial {
-               padding: 100px;
-               p {
-                   font-size: 20px;
-                   line-height: 28px;
-                   font-weight: 300;
-                   color: #fff;
-                   margin-bottom: 30px;
-               }
-               h4 {
-                   color: #fff;
-                   font-size: 16px;
-                   font-weight: 700;
-               }
-           }
+       padding-bottom: 100px;
+       #carouselExampleControls {
+           background: #25d25e;
+           text-align: center;
+           padding: 40px;
+           color: #fff;
        }
    }
 
@@ -341,7 +227,6 @@
    } //  ================================>>>>>>>>testimonial-section 
    // =================================================================>>>>>>>> pricing-section 
    .pricing-section {
-       padding-top: 100px;
        padding-bottom: 100px;
        .heading {
            margin-top: 50px;
@@ -467,7 +352,7 @@
        } //  =========================>>>>>>>>pricing-section 
    } //   =====================================================>>>>>>>>  blog-section                           
    .blog-section {
-       padding-top: 100px;
+       padding-top: 50px;
        padding-bottom: 100px;
        .heading {
            margin-top: 50px;
@@ -568,10 +453,11 @@
    } // ========================>>>>>>>> FOOTER_SLIDER
    // ====================================================================>>>>>>>>>>>>>>>>>>><CONTACT>
    .contact {
-       padding-top: 60px;
+       padding-top: 0px;
        margin-bottom: -50px;
        .offset-md-1 {
            margin-left: 8.33%;
+           background: #25d25e;
        }
        .contact-info {
            background-color: #25d25e;
@@ -974,7 +860,7 @@
                    &::before {
                        color: #25d25e;
                        font-family: "FontAwesome";
-                       content: "";
+                       content: "\f00c";
                        position: absolute;
                        left: -40px;
                        top: 0;
@@ -1247,77 +1133,9 @@
                transform: translateY(-3px);
            }
        }
-   } //    .contact-section {
-   //        background-color: #f7f7f7;
-   //        .pad-top_bottom {
-   //            padding: 50px 0;
-   //            input[name="Name"] {
-   //                width: 47%;
-   //                margin-left: 3px;
-   //                padding: 5px;
-   //                border-radius: 5px;
-   //                margin-bottom: 10px;
-   //                border: 1px solid #ddd;
-   //                color: #333;
-   //            }
-   //            input[name="Message"] {
-   //                margin-left: 3px;
-   //                display: block;
-   //                width: 95%;
-   //                height: 250px;
-   //                margin-top: 10px;
-   //                border: 1px solid #ddd;
-   //                color: #333;
-   //                &::placeholder{
-   //                    display: flex;
-   //                }
-   //            }
-   //            .sb_btn {
-   //                margin-top: 10px;
-   //                padding: 17px 0;
-   //                text-decoration: none;
-   //                background-color: #25d25e;
-   //                display: inline-block;
-   //                font-size: 13px;
-   //                font-weight: 700;
-   //                color: #fff;
-   //                width: 25%;
-   //                text-align: center;
-   //                border-radius: 3px;
-   //                &:hover {
-   //                    background-color: #32ea6e;
-   //                    color: #fff;
-   //                    text-decoration: none;
-   //                    transform: translateY(-3px);
-   //                    transition: all 0.2s linear;
-   //                }
-   //            }
-   //            .work_time {
-   //                li {
-   //                    font-size: 13px;
-   //                    color: #777;
-   //                    display: block;
-   //                    padding-left: 75px;
-   //                    margin-bottom: 20px;
-   //                    position: relative;
-   //                }
-   //                i {
-   //                    background-color: #25d25e;
-   //                    color: #fff;
-   //                    display: block;
-   //                    text-align: center;
-   //                    width: 52px;
-   //                    height: 52px;
-   //                    line-height: 52px;
-   //                    position: absolute;
-   //                    left: 0;
-   //                    top: 0;
-   //                }
-   //            }
-   //        }
-   //    }
+   }
+
    .contact-section {
-    
        background-color: #f7f7f7;
        .pad-top_bottom {
            padding: 50px 0;
@@ -1401,3 +1219,148 @@
    /*<!--=================================================>>>>>>>>  <ANARIN ABOUT CSS-I> -->*/
    /*<!--==========================================================================>>>>>>>>  <ANARIN sERVICES CSS-I> -->*/
    /*<!--==========================>>>>>>>>  <ANARIN SERVICES CSS-I> -->*/
+
+   @media only screen and (max-width: 576px) {
+       .header-top-left {
+           display: none;
+       }
+       .mid-header {
+           .contact-info {
+               li {
+                   a {
+                       padding: 0 10px;
+                       padding-left: 45px;
+                       font-size: 10px;
+                       margin-top: 10px;
+                   }
+               }
+           }
+       }
+       .header-bottom {
+           .input-group {
+               margin-bottom: 10px;
+           }
+           .navbar-toggler {
+               margin-top: 10px;
+           }
+           .navbar-collapse {
+               .navbar-nav {
+                   width: 500px;
+                   margin-top: 10px;
+                   background-color: #fff;
+                   li {
+                       border: 1px solid grey;
+                       a {
+                           color: #282525;
+                           font-size: 12px;
+                       }
+                   }
+               }
+           }
+       }
+       .promo-section {
+           .promo-item {
+               h4 {
+                   font-size: 13px !important;
+                   font-weight: 600 !important;
+               }
+               p {
+                   font-size: 10px !important;
+               }
+           }
+       }
+       .service-section {
+           .service-item {
+               h4 {
+                   font-size: 14px !important;
+               }
+           }
+           .btn-group-center {
+               a {
+                   padding: 20px !important;
+               }
+           }
+       }
+       .service-info-section {
+           ul {
+               li {
+                   margin-left: 20px !important;
+                   &::before {
+                       left: -20px !important;
+                   }
+               }
+           }
+       }
+       .case-studies-section {
+           padding-bottom: 70px;
+           .owl-nav {
+               display: none !important;
+           }
+       }
+       .testimonial-section {
+           padding-top: 0 !important;
+           padding-bottom: 0 !important;
+       }
+       .pricing-section {
+           .pricing-table {
+               margin-top: 10px;
+           }
+           span {
+               font-size: 11px !important;
+           }
+       }
+       .blog-section {
+           .blog-content {
+               h4 {
+                   font-size: 13px !important;
+               }
+               p {
+                   font-size: 12px !important;
+               }
+           }
+       }
+       .contact {
+           margin-bottom: 50px !important;
+           .offset-md-1 {
+               margin-left: 0px !important;
+               .contact-info {
+                   padding: 25px 25px !important;
+                   text-transform: uppercase !important;
+                   border-right: 1px solid #28e265 !important;
+                   i {
+                       font-size: 15px;
+                   }
+                   a {
+                       font-size: 11px !important;
+                   }
+               }
+           }
+       }
+       .footer_slider {
+           .owl-item.active {
+               width: 150px !important;
+           }
+           .owl-item.cloned.active {
+               width: 150px !important;
+           }
+       }
+       .team-section {
+           .team-member {
+               margin-top: 20px !important;
+           }
+       }
+       .cta-section {
+           h2 {
+               font-size: 26px !important;
+               margin-bottom: 25px !important;
+           }
+       }
+       .contact-section {
+           .work_time {
+               li {
+                   margin-top: 20px !important;
+                   margin-bottom: 40px !important;
+               }
+           }
+       }
+   }

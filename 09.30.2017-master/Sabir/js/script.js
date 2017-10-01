@@ -35,8 +35,9 @@ $(document).ready(function () {
     margin: 20,
     center: true,
     items: 6,
-  });
 
+  });
+ 
 
   /* Case Carousel */
   var caseCarousel = $('#case-carousel');
@@ -63,11 +64,26 @@ $(document).ready(function () {
 
 
 
- 
+  $('.carousel').carousel()
 
-
+  // @media only screen and (max-width: 576px) {
+  //   var owl = $('.slider_2 .owl-carousel');
+  //   owl.owlCarousel({
+  //     loop: true,
+  //     autoplay: true,
+  //     smartSpeed: 1500,
+  //     autoplayTimeout: 2000,
+  
+  //     margin: 20,
+  //     center: true,
+  //     items: 3,
+  
+  //   });
+  // }
 
 });
+  
+
 
 
   
