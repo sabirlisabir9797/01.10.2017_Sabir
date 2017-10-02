@@ -125,6 +125,10 @@ ul {
   .header-bottom .item1 {
     margin-top: 16px; }
 
+.main_slider {
+  background: #fff;
+  padding-top: 100px; }
+
 .promo-section .ptb-100 {
   padding-top: 100px;
   padding-bottom: 100px; }
@@ -157,17 +161,47 @@ ul {
       font-size: 13px; }
 
 .testimonial-section {
-  padding-top: 100px;
-  padding-bottom: 100px; }
-  .testimonial-section #carouselExampleControls {
+  padding-top: 50px;
+  padding-bottom: 50px; }
+  .testimonial-section .testimonial {
     background: #25d25e;
     text-align: center;
-    padding: 40px;
+    padding: 50px;
     color: #fff; }
+  .testimonial-section .owl-nav .owl-prev {
+    position: absolute;
+    color: #777;
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    left: -9%;
+    top: calc(50% - 20px); }
+    .testimonial-section .owl-nav .owl-prev i {
+      font-size: 35px;
+      line-height: 60px;
+      text-align: center; }
+  .testimonial-section .owl-nav .owl-next {
+    position: absolute;
+    color: #777;
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    right: -9%;
+    top: calc(50% - 20px); }
+    .testimonial-section .owl-nav .owl-next i {
+      font-size: 35px;
+      line-height: 60px;
+      text-align: center; }
 
 .testimonial-section2 {
   padding-top: 100px;
-  padding: 100px;
+  padding-bottom: 100px;
   background-color: #f7f7f7;
   border-top: 1px solid #eaeaea; }
   .testimonial-section2 h2 {
@@ -1008,6 +1042,8 @@ ul {
         color: #282525;
         font-size: 12px; }
 
+  .promo-section .promo-items {
+    padding: 50px 0px !important; }
   .promo-section .promo-item h4 {
     font-size: 13px !important;
     font-weight: 600 !important; }
@@ -1070,6 +1106,15 @@ ul {
 
   .contact-section .work_time li {
     margin-top: 20px !important;
-    margin-bottom: 40px !important; } }
+    margin-bottom: 40px !important; }
+
+  .team-section .heading h2::before {
+    left: 32% !important; }
+
+  .testimonial-section2 {
+    padding-top: 50px !important;
+    padding-bottom: 50px !important; }
+    .testimonial-section2 .item h2 {
+      font-size: 22px !important; } }
 
 /*# sourceMappingURL=style.css.map */

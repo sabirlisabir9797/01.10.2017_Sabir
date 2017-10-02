@@ -5,13 +5,12 @@ $(document).ready(function () {
   owl.owlCarousel({
     items: 1,
     loop: true,
-    margin: 10,
     autoplay: true,
-    autoplayTimeout: 2000,
-    autoplayHoverPause: false,
-    autoplaySpeed: 1500,
+    smartSpeed: 1000,
+    dots: false,
     nav: true,
     navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>'],
+    margin: 20,
 
   });
   $(".counter").each(function () {
@@ -30,8 +29,6 @@ $(document).ready(function () {
     loop: true,
     autoplay: true,
     smartSpeed: 1500,
-    autoplayTimeout: 2000,
-
     margin: 20,
     center: true,
     items: 6,
@@ -64,22 +61,7 @@ $(document).ready(function () {
 
 
 
-  $('.carousel').carousel()
-
-  // @media only screen and (max-width: 576px) {
-  //   var owl = $('.slider_2 .owl-carousel');
-  //   owl.owlCarousel({
-  //     loop: true,
-  //     autoplay: true,
-  //     smartSpeed: 1500,
-  //     autoplayTimeout: 2000,
   
-  //     margin: 20,
-  //     center: true,
-  //     items: 3,
-  
-  //   });
-  // }
 
 });
   

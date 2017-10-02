@@ -155,6 +155,11 @@
            margin-top: 16px;
        }
    } // ===========================>>>>>>>>header-bottom
+   //  /==========================================================================>>>>>>>>>>>>>Main_Slider -->
+   .main_slider {
+       background: #fff;
+       padding-top: 100px;
+   } //  /===============================================>>>>>>>>>>>>>Main_Slider -->
    // =====================================================>>>>>>>>promo-section
    .promo-section {
        .ptb-100 {
@@ -197,19 +202,55 @@
    } // ==============================>>>>>>>>promo-section
    //  ====================================================================>>>>>>>>testimonial-section 
    .testimonial-section {
-       padding-top: 100px;
-       padding-bottom: 100px;
-       #carouselExampleControls {
+       padding-top: 50px;
+       padding-bottom: 50px;
+       .testimonial {
            background: #25d25e;
            text-align: center;
-           padding: 40px;
+           padding: 50px;
            color: #fff;
+       }
+       .owl-nav {
+           .owl-prev {
+               position: absolute;
+               color: #777;
+               background-color: transparent;
+               border: none;
+               font-size: 25px;
+               width: 40px;
+               height: 40px;
+               line-height: 40px;
+               left: -9%;
+               top: calc(50% - 20px);
+               i {
+                   font-size: 35px;
+                   line-height: 60px;
+                   text-align: center;
+               }
+           }
+           .owl-next {
+               position: absolute;
+               color: #777;
+               background-color: transparent;
+               border: none;
+               font-size: 25px;
+               width: 40px;
+               height: 40px;
+               line-height: 40px;
+               right: -9%;
+               top: calc(50% - 20px);
+               i {
+                   font-size: 35px;
+                   line-height: 60px;
+                   text-align: center;
+               }
+           }
        }
    }
 
    .testimonial-section2 {
        padding-top: 100px;
-       padding: 100px;
+       padding-bottom: 100px;
        background-color: #f7f7f7;
        border-top: 1px solid #eaeaea;
        h2 {
@@ -1259,6 +1300,9 @@
            }
        }
        .promo-section {
+           .promo-items {
+               padding: 50px 0px !important;
+           }
            .promo-item {
                h4 {
                    font-size: 13px !important;
@@ -1360,6 +1404,24 @@
                li {
                    margin-top: 20px !important;
                    margin-bottom: 40px !important;
+               }
+           }
+       }
+       .team-section {
+           .heading {
+               h2 {
+                   &::before {
+                       left: 32% !important;
+                   }
+               }
+           }
+       }
+       .testimonial-section2 {
+           padding-top: 50px !important;
+           padding-bottom: 50px !important;
+           .item {
+               h2 {
+                   font-size: 22px !important;
                }
            }
        }
